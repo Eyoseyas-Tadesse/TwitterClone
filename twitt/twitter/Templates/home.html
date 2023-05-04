@@ -46,7 +46,7 @@
                 
             {{twitt.number_of_likes}} Likes 
             
-        {% if user in twit.likes.all %}
+        {% if user in twitt.likes.all %}
             <a href ="{% url 'twitt_like' twitt.id %}">Unlike</a>
 
         {% else %}
