@@ -45,7 +45,7 @@
            By <a style="text-decoration-line: none; color: deeppink;" s href="{% url 'profile' profile.user.id %}">@{{ twitt.user.username|lower }}</a>
            
            <br/> {{twitt.number_of_likes}} Likes
-           {% if user in twit.likes.all %}
+           {% if user in twitt.likes.all %}
            <a href ="{% url 'twitt_like' twitt.id %}">Unlike</a>
 
        {% else %}
